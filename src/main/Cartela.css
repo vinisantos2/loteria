@@ -1,0 +1,9 @@
+.Cartela {
+    height: 320px;
+    width: 235px;
+    border-radius: 5px;
+   
+    display: grid;
+    grid-template-columns: repeat(5, 25%);
+   
+}
