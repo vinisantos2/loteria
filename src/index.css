@@ -2,8 +2,15 @@ body {
   display: flex;
   height: 100vh;
   justify-content: center;
-  margin-top: 2%;
+  
   text-align: center;
   color: #fff;
   background: linear-gradient(to right, rgb(83, 105, 118), rgb(41, 46, 73));
+}
+
+div {
+  text-align: center;
+  background-color: #A22EA9;
+  width: 292px;
+ 
 }
