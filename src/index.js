@@ -8,11 +8,14 @@ import Cartela from './main/Cartela';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div>
+<<<<<<< HEAD
         
+=======
+        <h1 id = "titulo">Lotofácil</h1>
+>>>>>>> branchGustavo
         <Cartela />
         
     </div>
-    
 );
 
 // If you want to start measuring performance in your app, pass a function

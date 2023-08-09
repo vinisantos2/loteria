@@ -92,7 +92,11 @@ export default class Cartela extends Component {
                 <Button label="25" click={this.clickBotao} />
                 <Resultados />
             </div>
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> branchGustavo
         )
     }
 }
