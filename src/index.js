@@ -8,11 +8,10 @@ import Resultados from './main/Resultados';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div>
-        <h1>Lotofácil</h1>
+        <h1 id = "titulo">Lotofácil</h1>
         <Cartela />
         <Resultados />
     </div>
-    
 );
 
 // If you want to start measuring performance in your app, pass a function

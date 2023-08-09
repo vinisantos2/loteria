@@ -33,7 +33,7 @@ export default class Resultados extends Component {
                 <p>
                     Possivel retorno:
                 </p>
-                <button  onClick={e => this.mudar(e)}>ok</button>
+                <button  onClick = "apiLoteria={apiLoteria.getLoterias}">ok</button>
 
             </div>
 

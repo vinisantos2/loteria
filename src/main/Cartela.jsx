@@ -37,7 +37,7 @@ export default class Cartela extends Component {
                 <Button label="24" />
                 <Button label="25" />
             </div>
-          
+        
         )
     }
 }
