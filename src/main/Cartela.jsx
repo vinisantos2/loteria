@@ -12,7 +12,13 @@ import Jogo from '../componentes/jogo'
 const initialState = {
     ativo: false,
     numerosSelecionados: [],
-    stringNumeros: []
+    stringNumeros: [],
+    resultados: {
+        pontos15: 0,
+        pontos14: 0,
+        pontos13: 0
+    } 
+
 }
 
 const jogo = "Lotofácil"
@@ -90,13 +96,8 @@ export default class Cartela extends Component {
                 <Button label="23" click={this.clickBotao} />
                 <Button label="24" click={this.clickBotao} />
                 <Button label="25" click={this.clickBotao} />
-                <Resultados />
+                <Resultados value={this.state.resultados} />
             </div>
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> branchGustavo
         )
     }
 }

@@ -1,5 +1,6 @@
 const apiLoteria = {}
 
+
 //faz a contagem de acertos do usuario
 function contarValoresIguais(cartelaUsuario, ...valoresApi) {
     const setCartelaUsuario = new Set(cartelaUsuario);

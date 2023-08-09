@@ -8,11 +8,6 @@ import Cartela from './main/Cartela';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div>
-<<<<<<< HEAD
-        
-=======
-        <h1 id = "titulo">Lotofácil</h1>
->>>>>>> branchGustavo
         <Cartela />
         
     </div>
