@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Cartela from './main/Cartela';
-import Resultados from './main/Resultados';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div>
-        <h1>Lotofácil</h1>
+        
         <Cartela />
-        <Resultados />
+        
     </div>
     
 );
