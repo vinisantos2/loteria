@@ -1,0 +1,6 @@
+.resultados {
+    display: grid;
+    background-color: #A22EA9;
+    grid-column: span 5;
+    text-align: start;
+}
