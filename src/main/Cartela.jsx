@@ -14,10 +14,10 @@ const initialState = {
     numerosSelecionados: [],
     stringNumeros: [],
     resultados: {
-        pontos15: 0,
-        pontos14: 0,
-        pontos13: 0
-    } 
+        pontos15: 15,
+        pontos14: 14,
+        pontos13: 13
+    }
 
 }
 
@@ -25,21 +25,28 @@ const jogo = "Lotofácil"
 
 
 export default class Cartela extends Component {
-    
+
     state = { ...initialState }
-    
+
     constructor(props) {
         super(props)
-
         this.clearMemory = this.clearMemory.bind(this)
         this.clickBotao = this.clickBotao.bind(this);
 
     }
 
     clearMemory() {
-        this.setState({ ...initialState })
+        this.setState({
+            ativo: false,
+            numerosSelecionados: [],
+            stringNumeros: [],
+            resultados: {
+                pontos15: 15,
+                pontos14: 14,
+                pontos13: 13
+            }
+        })
     }
-
 
 
     clickBotao(n) {
@@ -52,11 +59,11 @@ export default class Cartela extends Component {
             return
         }
 
-        this.state.numerosSelecionados.push( n )
-        
+        this.state.numerosSelecionados.push(n)
+
 
         this.setState({
-            ...this.state.stringNumeros.push( n +' ')
+            ...this.state.stringNumeros.push(n + ' ')
         })
 
 
@@ -66,7 +73,7 @@ export default class Cartela extends Component {
 
 
     render() {
-      
+
         return (
             <div className="Cartela">
                 <Jogo value={jogo} />
@@ -97,6 +104,8 @@ export default class Cartela extends Component {
                 <Button label="24" click={this.clickBotao} />
                 <Button label="25" click={this.clickBotao} />
                 <Resultados value={this.state.resultados} />
+                <Button click={this.clearMemory} label="limpar" />
+
             </div>
         )
     }

@@ -1,29 +1,13 @@
 import React, { Component } from 'react'
 import './resultado.css'
+import Button from './Button';
 
 
 export default class Resultados extends Component {
 
-    state = {
-        pontos15: 0,
-        pontos14: 3,
-        pontos13: 0,
-        custo: 0,
-        retorno: 0,
-    }
+    state = this.props.value
+   
 
-    buscar(e) {
-        this.setState(
-            {
-                pontos15: 0,
-                pontos14: 0,
-                pontos13: 0,
-                custo: 0,
-                retorno: 0,
-            })
-        console.log(this.state.pontos15 + "AQui");
-
-    }
     render() {
         const { pontos15, pontos14, pontos13, custo, retorno, } = this.state;
         return (
@@ -43,7 +27,7 @@ export default class Resultados extends Component {
                 <p>
                     Possivel retorno: {retorno}
                 </p>
-                <button onClick={e => this.buscar(e)}>ok</button>
+               
 
             </div>
 

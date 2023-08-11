@@ -10,8 +10,8 @@ export default class Resultados extends Component {
 
     mudar(e) {
       
-        this.setState({pontos15: 8})
-        console.log(this.state.pontos15+"AQui");
+       
+        console.log(this.state.pontos15+" AQui-----");
 
     }
     render() {
