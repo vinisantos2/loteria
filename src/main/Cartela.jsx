@@ -44,7 +44,7 @@ export default class Cartela extends Component {
 
     clickBotao(n) {
 
-        if (this.state.numerosSelecionados.length == 17) {
+        if (this.state.numerosSelecionados.length == 15) {
             return
         }
 

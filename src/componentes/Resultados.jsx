@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './resultado.css'
+import apiloteria from '../assets/js/api-loterias'
 
 
 export default class Resultados extends Component {
@@ -28,14 +29,14 @@ export default class Resultados extends Component {
         const { pontos15, pontos14, pontos13, custo, retorno, } = this.state;
         return (
             <div className='resultados'>
-                <p>
-                    Total de jogos com 15 pontos: {pontos15}
+                <p id="15pontos">
+                    Total de jogos com 15 pontos: {}
                 </p>
-                <p>
-                    Total de jogos com 14 pontos: {pontos14}
+                <p id="14pontos">
+                    Total de jogos com 14 pontos: {}
                 </p>
-                <p>
-                    Total de jogos com 13 pontos: {pontos13}
+                <p id="13pontos">
+                    Total de jogos com 13 pontos: {}
                 </p>
                 <p>
                     Custo: {custo}
@@ -43,7 +44,7 @@ export default class Resultados extends Component {
                 <p>
                     Possivel retorno: {retorno}
                 </p>
-                <button onClick={e => this.buscar(e)}>ok</button>
+                <button onClick={e => this.buscar(e) + apiloteria.getLoterias()}>ok</button>
 
             </div>
 
