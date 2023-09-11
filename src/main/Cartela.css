@@ -1,10 +1,14 @@
-.Cartela {
-   
-    width: 235px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: repeat(5, 25%);
-    grid-template-rows: 1fr 1fr 48px 48px 48px 48px 48px;
+.cartela {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
     
+}
+
+.ordenarButoes{
+    background-color: #A22EA9;
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    grid-template-columns:repeat(5, 60px);
    
 }

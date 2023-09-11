@@ -12,8 +12,8 @@
     outline: none;
 }
 
-.button.operation {
-    background-color: #fa8231;
-    color: #FFF;
-}
 
+
+.ativo{
+    background-color: aqua;
+}
