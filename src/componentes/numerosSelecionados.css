@@ -1,10 +1,9 @@
 .numerosSelecionados {
-   
-    grid-column: span 5;
-    background-color:#A22EA9;
+    background-color: #A22EA9;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    overflow: hidden;
-  
+    flex-direction: column;
+    text-align: left;
+}
+.numerosSelecionados >p{
+ margin: 0;
 }

@@ -1,6 +1,19 @@
 .resultados {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     background-color: #A22EA9;
-    grid-column: span 5;
-    text-align: start;
+
+}
+
+.butoes {
+    display: flex;
+    justify-content: center;
+
+}
+
+.butoes > button{
+    margin-right: 10px;
+    width: 100px;
+    margin-bottom: 5px;
 }
